@@ -28,19 +28,21 @@ branch.banner({
     customCSS: '.title { color: #F00; }',   // Add your own custom styles to the banner that load last, and are gauranteed to take precedence, even if you leave the banner in an iframe
     make_new_link: true,                 // Should the banner create a new link, even if a link already exists?
     open_app: true                        // Should the banner try to open the app passively (without the user actively clicking) on load?
-
 }, {
     data: {
-        "$og_title": "Smart Banner Test",
-        "deeplink_text": "This is a deeplink from a banner"
+        "$og_title": "Fair And Square",
+        "body_index": "1",
+        "color_index": "1",
+        "face_index": "0",
+        "monster": "true",
+        "monster_name": "FairAndSquare"
     }  
 });
-
 </script>
 
   </head>
   <body>
-  <br>
-  <a id='downloadapp' onclick='branch.deepviewCta()'>Musely Continue Button</a>
+  Android Demo
+  <a id='downloadapp' onclick='branch.deepviewCta()'>View this in app</a>
   </body>
 </html>
