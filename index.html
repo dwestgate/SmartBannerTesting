@@ -40,13 +40,13 @@ branch.deepview({
         "$og_title": "Fair And Square",
         "deeplink_text": "Created from Smart Banner Test Page"
   },
-  feature: p['feature'],
-  channel: p['channel'],
-  tags: [ p['tag1'],p['tag2'] ],
-  stage: p['stage']
+  feature: ['feature'],
+  channel: ['channel'],
+  tags: [ ['tag1'],p['tag2'] ],
+  stage: ['stage']
 }, {
-  open_app: p['open_app'],
-  make_new_link: p['make_new_link']
+  open_app: ['open_app'],
+  make_new_link: ['make_new_link']
 }, function(err) {
   console.log(err || 'no error');
 });
