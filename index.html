@@ -38,7 +38,10 @@ branch.banner({
 branch.deepview({
   data: {
     "$og_title": "Fair And Square",
-    "deeplink_text": "Created from Smart Banner Test Page"
+    "deeplink_text": "Created from Smart Banner Test Page",
+    "$fallback_url": "https://google.com",
+    "$fallback_url": "https://google.com",
+    "$desktop_url": "http://myappwebsite.com"
   },
     feature: "feature",
     channel: "channel",
@@ -46,8 +49,7 @@ branch.deepview({
     stage: "stage"
   }, {
     open_app: false,
-    make_new_link: false,
-    $fallback_url: "https://google.com"
+    make_new_link: false
   }, function(err) {
     console.log(err || 'no error');
 });
