@@ -43,11 +43,11 @@ branch.deepview({
     feature: "feature",
     channel: "channel",
     tags: [ ['tag1'],['tag2'] ],
-    stage: "stage",
-    $fallback_url: "https://google.com"
+    stage: "stage"
   }, {
-    open_app: ['open_app'],
-    make_new_link: ['make_new_link']
+    open_app: false,
+    make_new_link: false,
+    $fallback_url: "https://google.com"
   }, function(err) {
     console.log(err || 'no error');
 });
