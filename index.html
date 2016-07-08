@@ -9,6 +9,7 @@
 branch.init('key_live_fbkYgm7F6kwieb02G4l0CjflrydIJHdq', null, function(err, data) {
     console.log(data);
 });
+
 branch.banner({
     icon: 'http://icons.iconarchive.com/icons/wineass/ios7-redesign/512/Appstore-icon.png',
     title: 'Branch Demo App',
@@ -33,6 +34,21 @@ branch.banner({
         "$og_title": "Fair And Square",
         "deeplink_text": "Created from Smart Banner Test Page"
     }  
+});
+branch.deepview({
+  data: {
+        "$og_title": "Fair And Square",
+        "deeplink_text": "Created from Smart Banner Test Page"
+  },
+  feature: p['feature'],
+  channel: p['channel'],
+  tags: [ p['tag1'],p['tag2'] ],
+  stage: p['stage']
+}, {
+  open_app: p['open_app'],
+  make_new_link: p['make_new_link']
+}, function(err) {
+  console.log(err || 'no error');
 });
 </script>
 
