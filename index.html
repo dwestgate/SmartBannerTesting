@@ -37,15 +37,14 @@ branch.banner({
 branch.deepview({
   data: {
     "$og_title": "Fair And Square",
-    "deeplink_text": "Created from Smart Banner Test Page",
-    "$desktop_url": "https://www.branch.io"
+    "deeplink_text": "Created from Smart Banner Test Page"
   },
     feature: "feature",
     channel: "channel",
     tags: [ ['tag1'],['tag2'] ],
     stage: "stage"
   }, {
-    open_app: false,
+    open_app: true,
     make_new_link: false
   }, function(err) {
     console.log(err || 'no error');
@@ -54,6 +53,6 @@ branch.deepview({
 
   </head>
   <body>
-    <h2><a id='downloadapp' onclick='branch.deepviewCta()'>Snappy; open_app = true</a></h2>
+    <h2><a id='downloadapp' onclick='branch.deepviewCta()'>Click here to open Snappy</a></h2>
   </body>
 </html>
